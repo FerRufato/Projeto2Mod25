@@ -8,7 +8,7 @@ public class ClienteService implements IClienteService {
 
     private final IClienteDAO clienteDAO;
 
-    // Construtor correto
+
     public ClienteService(IClienteDAO clienteDAO) {
         this.clienteDAO = clienteDAO;
     }

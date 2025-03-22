@@ -29,8 +29,5 @@ public abstract class GenericService<T, K> implements IGenericService<T, K> {
         return dao.alterar(key, entity);
     }
 
-    @Override
-    public List<T> listarPaginado(int pageNumber, int pageSize) {
-        return dao.listarPaginado(pageNumber, pageSize);
-    }
+
 }

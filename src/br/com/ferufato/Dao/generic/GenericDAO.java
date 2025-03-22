@@ -29,13 +29,5 @@ public abstract class GenericDAO<T, K> {
         return false;
     }
 
-    public List<T> listarPaginado(int pageNumber, int pageSize) {
-        List<T> entities = new ArrayList<>(datastore.values());
-        int fromIndex = (pageNumber - 1) * pageSize;
-        int toIndex = Math.min(fromIndex + pageSize, entities.size());
-        if (fromIndex > entities.size()) {
-            return new ArrayList<>();
-        }
-        return entities.subList(fromIndex, toIndex);
-    }
+
 }
